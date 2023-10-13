@@ -1,12 +1,12 @@
 
 
 public class Persona {
-	String nombre;
-	int edad;
-	String dni;
-	double peso;
-	char sexo;
-	double altura;
+	private String nombre;
+	private int edad;
+	private String dni;
+	private double peso;
+	private char sexo;
+	private double altura;
 	
 	private static final char SEXO_POR_DEFECTO = 'H'; 
 	

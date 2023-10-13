@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Electrodomestico {
 
-	Double precioBase;
-	String color;
-	char consumoEnergetico;
-	int peso;
+	private Double precioBase;
+	private String color;
+	private char consumoEnergetico;
+	private int peso;
 	
 	private static final Double PRECIOBASE_POR_DEFECTO = 100.0; 
 	private static final String COLOR_POR_DEFECTO = "blanco"; 
@@ -33,7 +33,7 @@ public class Electrodomestico {
 	public Electrodomestico(Double precioBase, String color, char consumoEnergetico, int peso) {
 		this.precioBase = precioBase;
 		this.color = opcionesDeColor(color);
-		this.consumoEnergetico = consumoEnergetico;
+		this.consumoEnergetico = opcionesConsumoEnergitico(consumoEnergetico);
 		this.peso = peso;
 	}
 	
@@ -117,7 +117,7 @@ public class Electrodomestico {
 		  
 		  String colorElectrodomestuco = electrodomestico.opcionesDeColor(color);
 
-	      System.out.println("El color ahora seria " + colorElectrodomestuco);	
+	      System.out.println("El color ahora seria " + colorElectrodomestuco);
 	      
 	      scanner.close();
 	  }

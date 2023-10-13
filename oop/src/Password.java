@@ -4,8 +4,8 @@
 import java.util.Random;
 
 public class Password {
-	int longitud;
-	String password;
+	private int longitud;
+	private String password;
 	
 	private static final int LONGITUD = 8; 
 

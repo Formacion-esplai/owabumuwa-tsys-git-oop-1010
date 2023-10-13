@@ -2,11 +2,11 @@
 
 public class Serie {
 
-	String titulo;
-	int numeroDeTemporada;
-	boolean entregado;
-	String genero;
-	String creador;
+	private String titulo;
+	private int numeroDeTemporada;
+	private boolean entregado;
+	private String genero;
+	private String creador;
 	
 	private static final int NUMERO_DE_TEMPORADA_POR_DEFECTO = 3; 
 	private static final boolean ENTREGADO_POR_DEFECTO = false; 
